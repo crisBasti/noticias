@@ -42,13 +42,16 @@ main {
     /* padding: 10px; */
 }
 
-
 .noticias__envivo {
     margin: 10px 0;
     display: flex;
     justify-content: space-around;
 }
 
+main .noticias__envivo .vivo:hover {
+    width: 350px;
+    height: 350px;
+}
 .caja__noticias {
     display: flex;
     padding: 5px;
@@ -83,7 +86,8 @@ aside {
 
 /* FOOTER */
 footer {
-    height: 150px;
+    height: fit-content;
+    min-height: 150px;
     text-align: center;
     background-color: black;
     color: aqua;
@@ -104,6 +108,10 @@ footer {
     border-radius: 50%;
 }
 
+.donacion__mp {
+    display: flex;
+}
+
 .map__01 {
     border-radius: 50%;
 }
@@ -119,6 +127,19 @@ footer {
 
     .noticias__envivo {
         display: block;
+    }
+
+    .aside__publicidades article {
+        width: 80%;
+        margin: auto;
+    }
+
+    .caja__footer {
+        margin: 0 80px;
+    }
+
+    .caja__footer .enlace__footer {
+        margin-top: 20px;
     }
 }
 
@@ -145,10 +166,11 @@ footer {
     }
 
     footer {
+        display: block;
         padding: 10px;
     }
 
-    /* .videoYT {
-        width: 100%;
-    } */
+    .caja__footer {
+        display: block;
+    }
 }
