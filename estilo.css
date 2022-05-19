@@ -8,7 +8,7 @@
     width: 100%;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 8fr 2fr;
+    grid-template-columns: 1fr 8fr 1fr;
     grid-template-rows: 1fr 10fr 1fr;
     grid-template-areas:'header header header'
                         'main   main   aside'
@@ -30,12 +30,18 @@ header a {
     color: aqua;
     text-decoration: none;
 }
+
+header h2 {
+    font-size: 3em;
+}
 /* MAIN */
 main {
     background-color: aqua;
+    text-align: center;
     grid-area: main;
     /* padding: 10px; */
 }
+
 
 .noticias__envivo {
     margin: 10px 0;
@@ -54,15 +60,20 @@ main {
 } */
 
 aside {
+    
     grid-area: aside;
 }
 
-aside h2 {
+/* aside h2 {
     text-align: center;
-}
+} */
 
 .aside__publicidades {
-    padding: 0 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* padding: 50px 10px; */
 }
 
 .aside__publicidades img {
@@ -90,6 +101,11 @@ footer {
 .logo__mp {
     width: 150px;
     height: 100px;
+    border-radius: 50%;
+}
+
+.map__01 {
+    border-radius: 50%;
 }
 
 @media screen and (max-width: 767px) {
@@ -121,6 +137,10 @@ footer {
 
     .caja__noticias {
         display: block;
+    }
+
+    .aside__publicidades {
+        padding: 10px 10px;
     }
 
     .aside__publicidades img {
